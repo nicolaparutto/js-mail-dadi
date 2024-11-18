@@ -16,6 +16,7 @@ const listaMail = [
    'asia@gmail.com',
 ]
 
+//setto la variabile che determinerà la condizione d'accesso su: false.
 let accessoConsentito = false;
 
 //Creo un ciclo while che mi ripeta la richiesta di inserire la mail, fino a quando non inserisco una mail valida.
@@ -23,7 +24,7 @@ while(!accessoConsentito){
    //prompt per la richiesta di inserire la mail.
    let mailInserita = prompt('inserisci la tua mail:');
 
-   //messaggio standard, se la mail non è tra quelle valide.
+   //messaggio standard se la mail non è tra quelle valide.
    let messaggio = `Accesso non consentito! la mail che hai inserito non è valida`;
 
    //creo un ciclo per il confronto della mail inserita, con quelle dell'elenco dell'array.

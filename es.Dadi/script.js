@@ -7,12 +7,14 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 let numGiocatore = Math.ceil(Math.random()*6);
 let numComputer = Math.ceil(Math.random()*6);
 
+//preimposto il messaggio che stabilisce il vincitore su "hai perso"
 let message = 'Hai perso';
 
+//messaggi di "giocata" del giocatore o del computer
 console.log('Giocatore tira' + ' ' + numGiocatore);
-
 console.log('Computer tira' + ' ' + numComputer);
 
+//condizioni di vittoria o pareggio
 if(numGiocatore == numComputer){
    message = 'Pareggio';
 } else if(numGiocatore > numComputer){
